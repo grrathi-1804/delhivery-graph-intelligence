@@ -1,0 +1,28 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (Crucial: Do not upload raw datasets to GitHub/Git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model weights and large outputs
+outputs/models/*.pkl
+outputs/models/*.h5
+
+# VS Code specific files
+.vscode/
+.DS_Store

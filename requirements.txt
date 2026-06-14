@@ -1,0 +1,17 @@
+# Data Manipulation & Math
+pandas
+numpy
+
+# Graph Analytics
+networkx
+
+# Machine Learning & Regressions
+scikit-learn
+xgboost
+
+# Plotting & Visualizations
+matplotlib
+seaborn
+
+# Essential for running Jupyter Notebooks in VS Code
+ipykernel
