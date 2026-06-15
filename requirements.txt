@@ -1,17 +1,28 @@
-# Data Manipulation & Math
-pandas
-numpy
+# ── Core Data ────────────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.24.0
 
-# Graph Analytics
-networkx
+# ── Graph Analytics ──────────────────────────────────────────────────────────
+networkx>=3.2
 
-# Machine Learning & Regressions
-scikit-learn
-xgboost
+# ── Machine Learning (Phase 2 & 3) ───────────────────────────────────────────
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
 
-# Plotting & Visualizations
-matplotlib
-seaborn
+# ── Deep Learning / GNN (Phase 3) ────────────────────────────────────────────
+torch>=2.1.0
+torch-geometric>=2.4.0
+node2vec>=0.4.6
 
-# Essential for running Jupyter Notebooks in VS Code
-ipykernel
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# ── Notebook ──────────────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm>=4.66.0
+joblib>=1.3.0
