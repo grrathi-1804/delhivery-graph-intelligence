@@ -1,0 +1,10 @@
+FTL vs CARTING DECISION FRAMEWORK — RULE SHEET
+=======================================================
+
+|--- median_distance_km <= 85.60
+|   |--- total_trip_count <= 65.00
+|   |   |--- class: Recommend CARTING
+|   |--- total_trip_count >  65.00
+|   |   |--- class: Recommend CARTING
+|--- median_distance_km >  85.60
+|   |--- class: Recommend FTL

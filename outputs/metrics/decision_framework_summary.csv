@@ -1,0 +1,2 @@
+total_corridors,corridors_recommended_switch,pct_recommended_switch,pct_recommended_ftl,pct_recommended_carting,analytical_breakeven_km,total_cost_savings_rs,total_sla_breach_reduction,regressor_mae,classifier_auc,classifier_accuracy,n_train,n_test
+2783,1707,61.34,0.86,99.14,85.7,2952399.54,500.3,0.6157,0.9519,0.9242,21094,5274
