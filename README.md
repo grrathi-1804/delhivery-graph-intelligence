@@ -66,7 +66,7 @@ delhivery-graph-intelligence/
 ## Setup
 
 ```bash
-git clone <this-repo>
+git clone <https://github.com/grrathi-1804>
 cd delhivery-graph-intelligence
 
 python -m venv venv
