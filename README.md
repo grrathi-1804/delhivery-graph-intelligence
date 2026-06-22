@@ -54,6 +54,9 @@ delhivery-graph-intelligence/
 │   ├── network_operations_strategy_memo.pdf
 │   └── network_operations_strategy_memo.docx
 │
+├── dashboard/
+│   └── app.py                            # Optional — live Streamlit risk dashboard
+│
 ├── requirements.txt
 └── README.md
 ```
@@ -63,7 +66,7 @@ delhivery-graph-intelligence/
 ## Setup
 
 ```bash
-git clone https://github.com/grrathi-1804
+git clone <this-repo>
 cd delhivery-graph-intelligence
 
 python -m venv venv
@@ -94,6 +97,15 @@ python src/decision_framework.py   # Phase 4  — FTL vs Carting recommendation 
 
 Phase 5 (the strategy memo) is a written deliverable in `delivery_memo/`, built from the outputs of Phases 1–4.
 
+### Optional — Live Risk Dashboard
+After running Phases 1–4 at least once, launch the dashboard:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+This opens an interactive view of the network with four tabs: a live network map (node colour = SLA breach rate, edge colour = delay severity), a **live risk scorer** that queries Phase 4's trained models on-the-fly for any source/destination pair you pick, a sortable bottleneck leaderboard, and a filterable corridor explorer.
+
 ---
 
 ## Phase-by-Phase Summary
@@ -114,6 +126,9 @@ Trains a delay-ratio regressor and an SLA-breach classifier, then runs a **count
 
 ### Phase 5 — Network Operations Strategy Memo
 A 2-page memo for the Head of Network Operations — no raw model output, no technical jargon. Names the top 5 bottleneck hubs with their estimated SLA-breach contribution, recommends three categorized interventions (facility upgrade / parallel route / route-type shift), and quantifies the projected % reduction in late deliveries and revenue-at-risk recovered from upgrading the top 3 hubs.
+
+### Optional — Live Risk Dashboard (Streamlit)
+Trains nothing new — it's a live window onto Phases 1–4's existing outputs. The standout feature is the **Live Risk Scorer**: pick any two facilities, a route type, and a time of day, and the Phase 4 regressor + classifier score that exact lane in real time, right in the browser session, alongside an FTL-vs-Carting cost comparison using the same validated cost model. Imports its cost logic directly from `src/decision_framework.py` rather than redefining it, so the dashboard can never silently drift out of sync with the actual framework.
 
 ---
 
@@ -141,4 +156,4 @@ A 2-page memo for the Head of Network Operations — no raw model output, no tec
 
 ## Author
 
-Gaurav Rathi|Nit Trichy
+GAURAV RATHI | NIT TRICHY
